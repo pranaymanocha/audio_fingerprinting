@@ -35,4 +35,6 @@ Flow for each module:-
 
 1) I have the database( the hashes) already downloaded and installed on workhorse. Hence we dont need to run the entire bash script again for creation of the databases. After we have the databases, we just need to run the function final_code.m which would take as input the parameters which were used for creating the database and also the audio snippet which would be the query for the database. It would output the rank of the song( a list of audios) which matches with the query audio.
 
+2) The functions in final_code.m are match_query.m which further takes in a query and finds the landmarks( using find_landmarks.m) in the query file and creates hashes of these landmark points(landmark2hash.m). After this, it goes to the databases one by one and finds the matches in terms of the number of hash matches using some threshold on the number of hashes that need to be matched to qualify as a match.
+
     
