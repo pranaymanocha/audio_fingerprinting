@@ -27,6 +27,12 @@ The code is divided into 3 sections:-
  
  For running the code,
  
- 1) Find the function runall2.sh, run the bash script ./runall2.sh. The code has some inbuilt addresses which I use( which will need to be modified) like the names of the err and log files, the final_result files and the MAP calcul/ation file
+ 1) Find the function runall2.sh, run the bash script ./runall2.sh. The code has some inbuilt addresses which I use( which will need to be modified) like the names of the err and log files, the final_result files and the MAP calculation file
  s.
+ 
+ 
+Flow for each module:-
+
+1) I have the database( the hashes) already downloaded and installed on workhorse. Hence we dont need to run the entire bash script again for creation of the databases. After we have the databases, we just need to run the function final_code.m which would take as input the parameters which were used for creating the database and also the audio snippet which would be the query for the database. It would output the rank of the song( a list of audios) which matches with the query audio.
+
     
